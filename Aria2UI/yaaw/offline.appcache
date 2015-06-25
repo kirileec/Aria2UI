@@ -1,0 +1,20 @@
+CACHE MANIFEST
+#2015-04-25 09:29
+
+CACHE:
+index.html
+main.css
+bootstrap.min.css
+bootstrap-responsive.min.css
+favicon.ico
+glyphicons-halflings-white.png
+glyphicons-halflings.png
+jquery-1.7.2.min.js
+bootstrap.min.js
+jquery.jsonrpc.js
+jquery.Storage.js
+jquery.base64.min.js
+mustache.js
+peerid.js
+aria2.js
+yaaw.js

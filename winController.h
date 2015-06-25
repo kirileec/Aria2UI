@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  winController.h
 //  Aria2UI
 //
 //  Created by Kirile on 15/6/25.
@@ -7,15 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <WebKit/WebKit.h>
-@interface ViewController : NSViewController
-
-
-@property (nonatomic) WebView *webview;
-
-
-
-
+#import <AppKit/AppKit.h>
+@interface winController : NSWindowController
 
 @end
-

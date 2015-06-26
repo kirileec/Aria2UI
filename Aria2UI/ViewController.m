@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WebPreferencesPrivate.h"
 
 
 @implementation ViewController
@@ -20,23 +20,30 @@
 
 	self.webview = [[WebView alloc] initWithFrame:self.view.bounds];
 
-	NSString *str1 = [[NSBundle mainBundle] pathForResource:@"index0" ofType:@"html"];
+	NSString *str1 = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
 
 	NSURL *url = [NSURL fileURLWithPath:str1];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
-	[[self.webview mainFrame] loadRequest:request];
+	[[_webview mainFrame] loadRequest:request];
 
-	[self.view addSubview:self.webview];
-	//[_webview setAutoresizingMask:NSViewHeightSizable | NSViewWidthSizable];
-	//[self.view setAutoresizingMask:NSViewMaxXMargin|NSViewMaxYMargin];
+	[self.view addSubview:_webview];
+
 
 	[self regNotification];
 
+	[self enableLocalStorageDatabase:_webview];
 
 }
 
-
+// 引入 WebPreferencesPrivate.h 以支持Webkit的 LocalStorage 用于保存配置
+-(void)enableLocalStorageDatabase:(WebView *)wv
+{
+	WebPreferences *prefs =[_webview preferences];
+	[prefs _setLocalStorageDatabasePath:@"~/Library/Application Support/Aria2UI"];
+	[prefs setLocalStorageEnabled:YES];
+}
+// 注册窗口消息
 -(void)regNotification
 {
 
@@ -56,18 +63,31 @@
 											   object:nil];
 
 }
-
+// 反注册窗口消息
+-(void)deRegNotification
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self
+													name:NSWindowDidResizeNotification
+												  object:self.view.window];
+	[[NSNotificationCenter defaultCenter] removeObserver:self
+													name:NSWindowWillCloseNotification
+												  object:self.view.window];
+	[[NSNotificationCenter defaultCenter] removeObserver:self
+													name:NSApplicationWillTerminateNotification
+												  object:nil];
+}
 
 
 -(void)appWillTerminate:(NSNotification *)notification
 {
-	NSLog(@"Applicattion Terminate");
+	//NSLog(@"Applicattion Terminate");
 	[self closeAria2];
+	[self deRegNotification];
 }
 
 -(void)windowDidResized:(NSNotification *)notification
 {
-	NSLog(@"Window Did Resized!");
+	//NSLog(@"Window Did Resized!");
 	[_webview setFrameSize:CGSizeMake([self.view.window frame].size.width , [self.view.window frame].size.height-22)];
 
 }
@@ -75,13 +95,15 @@
 
 -(void)windowWillClose:(NSNotification *)notification
 {
-	NSLog(@"Window Close");
+	//NSLog(@"Window Close");
 
 	[self closeAria2];
+	[self deRegNotification];
 	exit(0);
 
 }
-
+// TO DO ：
+// 处理aria2c位于不同目录时的情况
 -(void)startAria2
 {
 	NSArray *arg =[NSArray arrayWithObjects:@"-D",nil];

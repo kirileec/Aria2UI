@@ -13,7 +13,6 @@
 		F338D2431B3BBEDB00C22B86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F338D2421B3BBEDB00C22B86 /* Images.xcassets */; };
 		F338D2461B3BBEDB00C22B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F338D2441B3BBEDB00C22B86 /* Main.storyboard */; };
 		F338D2521B3BBEDB00C22B86 /* Aria2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F338D2511B3BBEDB00C22B86 /* Aria2UITests.m */; };
-		F353C21D1B3BDCFC0040C47F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F353C2061B3BDCFC0040C47F /* .gitignore */; };
 		F353C21E1B3BDCFC0040C47F /* bootstrap-responsive.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F353C2081B3BDCFC0040C47F /* bootstrap-responsive.min.css */; };
 		F353C21F1B3BDCFC0040C47F /* bootstrap.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F353C2091B3BDCFC0040C47F /* bootstrap.min.css */; };
 		F353C2201B3BDCFC0040C47F /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = F353C20A1B3BDCFC0040C47F /* main.css */; };
@@ -30,8 +29,8 @@
 		F353C22C1B3BDCFC0040C47F /* peerid.js in Resources */ = {isa = PBXBuildFile; fileRef = F353C2181B3BDCFC0040C47F /* peerid.js */; };
 		F353C22D1B3BDCFC0040C47F /* yaaw.js in Resources */ = {isa = PBXBuildFile; fileRef = F353C2191B3BDCFC0040C47F /* yaaw.js */; };
 		F353C22E1B3BDCFC0040C47F /* offline.appcache in Resources */ = {isa = PBXBuildFile; fileRef = F353C21A1B3BDCFC0040C47F /* offline.appcache */; };
-		F353C2321B3BDD400040C47F /* index0.html in Resources */ = {isa = PBXBuildFile; fileRef = F353C2311B3BDD400040C47F /* index0.html */; };
-		F353C2381B3BF2F90040C47F /* winController.m in Sources */ = {isa = PBXBuildFile; fileRef = F353C2371B3BF2F90040C47F /* winController.m */; };
+		F353C2321B3BDD400040C47F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F353C2311B3BDD400040C47F /* index.html */; };
+		F3F98A721B3CE55700B1DA6E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F3F98A711B3CE55700B1DA6E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		F338D24B1B3BBEDB00C22B86 /* Aria2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Aria2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F338D2501B3BBEDB00C22B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F338D2511B3BBEDB00C22B86 /* Aria2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aria2UITests.m; sourceTree = "<group>"; };
-		F353C2061B3BDCFC0040C47F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F353C2081B3BDCFC0040C47F /* bootstrap-responsive.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "bootstrap-responsive.min.css"; sourceTree = "<group>"; };
 		F353C2091B3BDCFC0040C47F /* bootstrap.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bootstrap.min.css; sourceTree = "<group>"; };
 		F353C20A1B3BDCFC0040C47F /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
@@ -74,9 +72,9 @@
 		F353C2181B3BDCFC0040C47F /* peerid.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = peerid.js; sourceTree = "<group>"; };
 		F353C2191B3BDCFC0040C47F /* yaaw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = yaaw.js; sourceTree = "<group>"; };
 		F353C21A1B3BDCFC0040C47F /* offline.appcache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offline.appcache; sourceTree = "<group>"; };
-		F353C2311B3BDD400040C47F /* index0.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index0.html; sourceTree = "<group>"; };
-		F353C2361B3BF2F90040C47F /* winController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winController.h; sourceTree = "<group>"; };
-		F353C2371B3BF2F90040C47F /* winController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = winController.m; sourceTree = "<group>"; };
+		F353C2311B3BDD400040C47F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		F3F98A701B3CDF0200B1DA6E /* WebPreferencesPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPreferencesPrivate.h; sourceTree = "<group>"; };
+		F3F98A711B3CE55700B1DA6E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +98,6 @@
 		F338D22C1B3BBEDB00C22B86 = {
 			isa = PBXGroup;
 			children = (
-				F353C2361B3BF2F90040C47F /* winController.h */,
-				F353C2371B3BF2F90040C47F /* winController.m */,
 				F338D2371B3BBEDB00C22B86 /* Aria2UI */,
 				F338D24E1B3BBEDB00C22B86 /* Aria2UITests */,
 				F338D2361B3BBEDB00C22B86 /* Products */,
@@ -125,8 +121,10 @@
 				F338D23B1B3BBEDB00C22B86 /* AppDelegate.m */,
 				F338D23F1B3BBEDB00C22B86 /* ViewController.h */,
 				F338D2401B3BBEDB00C22B86 /* ViewController.m */,
+				F3F98A701B3CDF0200B1DA6E /* WebPreferencesPrivate.h */,
 				F338D2421B3BBEDB00C22B86 /* Images.xcassets */,
 				F338D2441B3BBEDB00C22B86 /* Main.storyboard */,
+				F3F98A711B3CE55700B1DA6E /* README.md */,
 				F338D2381B3BBEDB00C22B86 /* Supporting Files */,
 			);
 			path = Aria2UI;
@@ -161,12 +159,11 @@
 		F353C2051B3BDCFC0040C47F /* yaaw */ = {
 			isa = PBXGroup;
 			children = (
-				F353C2061B3BDCFC0040C47F /* .gitignore */,
 				F353C2071B3BDCFC0040C47F /* css */,
 				F353C20B1B3BDCFC0040C47F /* img */,
 				F353C2101B3BDCFC0040C47F /* js */,
 				F353C21A1B3BDCFC0040C47F /* offline.appcache */,
-				F353C2311B3BDD400040C47F /* index0.html */,
+				F353C2311B3BDD400040C47F /* index.html */,
 			);
 			path = yaaw;
 			sourceTree = "<group>";
@@ -292,11 +289,10 @@
 				F353C22B1B3BDCFC0040C47F /* mustache.js in Resources */,
 				F338D2431B3BBEDB00C22B86 /* Images.xcassets in Resources */,
 				F353C2271B3BDCFC0040C47F /* jquery-1.7.2.min.js in Resources */,
-				F353C2321B3BDD400040C47F /* index0.html in Resources */,
+				F353C2321B3BDD400040C47F /* index.html in Resources */,
 				F353C22C1B3BDCFC0040C47F /* peerid.js in Resources */,
 				F353C2201B3BDCFC0040C47F /* main.css in Resources */,
 				F353C2261B3BDCFC0040C47F /* bootstrap.min.js in Resources */,
-				F353C21D1B3BDCFC0040C47F /* .gitignore in Resources */,
 				F353C2221B3BDCFC0040C47F /* glyphicons-halflings-white.png in Resources */,
 				F353C22E1B3BDCFC0040C47F /* offline.appcache in Resources */,
 				F353C22D1B3BDCFC0040C47F /* yaaw.js in Resources */,
@@ -324,9 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F353C2381B3BF2F90040C47F /* winController.m in Sources */,
 				F338D2411B3BBEDB00C22B86 /* ViewController.m in Sources */,
 				F338D23E1B3BBEDB00C22B86 /* main.m in Sources */,
+				F3F98A721B3CE55700B1DA6E /* README.md in Sources */,
 				F338D23C1B3BBEDB00C22B86 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

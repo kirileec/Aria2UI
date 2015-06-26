@@ -805,7 +805,7 @@ var YAAW = (function() {
       },
 
     },
-
+	//修改： location.protocol ＝> "http:"
     setting: {
       init: function() {
         this.jsonrpc_path = $.Storage.get("jsonrpc_path") || "http:"+"//"+(location.host.split(":")[0]||"localhost")+":6800"+"/jsonrpc";
